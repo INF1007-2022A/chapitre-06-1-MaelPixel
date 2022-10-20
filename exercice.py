@@ -4,10 +4,12 @@
 
 def order(values: list = None) -> list:
     if values is None:
-        # TODO: demander les valeurs ici
+        values=[]
+        while len(values)<10:
+            values.append(input("Entrer une valeur")+"\n")
         pass
-
-    return []
+        values.sort()
+    return values
 
 
 def anagrams(words: list = None) -> bool:
